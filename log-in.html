@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Log In</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
 
+<div class="w-100 h-100 p-2 m-4 d-flex flex-row justify-content-center align-items-center">
+    <form action="index.html" class="bg-light w-50 text-dark text-center p-4 border border-secondary rounded">
+        <div class="mb-3">
+            <p class="h3 form-label text-center">Log into XYZ Account</p>
+            <p class="h5 form-label text-muted text-center">
+                or <a href="sign-up.html"> Sign up </a>
+            </p>
+        </div>
+
+        <div class="mb-1 p-1">
+            <p class="mb-1 form-label text-left">Email:</p>
+            <input type="text" class="form-control text-center"/>
+        </div>
+
+        <div class="mb-5 p-1">
+            <p class="mb-1 form-label text-left">Password:</p>
+            <input type="password" class="form-control text-center"/>
+        </div>
+
+        <button class="button btn-primary w-50 m-auto p-2 rounded">LOG IN</button>
+    </form>
+</div>
 </body>
 </html>
