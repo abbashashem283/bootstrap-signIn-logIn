@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
 
+<div class="w-100 h-100 p-2 m-4 d-flex flex-row justify-content-center align-items-center">
+    <form class="form-sample bg-light text-dark p-3 border border-secondary rounded">
+        <div class="mb-3">
+            <p class="h3 form-label text-center">Create a XYZ Account</p>
+            <p class="h5 form-label text-muted text-center">
+                or <a href="log-in.html"> Log in </a>
+            </p>
+        </div>
+
+        <div class="mb-3 p-1">
+            <p class="mb-1 form-label">Name:</p>
+            <input type="text" class="form-control text-center"/>
+        </div>
+
+        <div class="mb-3 p-1">
+            <p class="mb-1 form-label">Email:</p>
+            <input type="email" class="form-control text-center"/>
+        </div>
+
+        <div class="mb-3 p-1">
+            <p class="mb-1 form-label">Phone Number:</p>
+            <input type="text" class="form-control text-center"/>
+        </div>
+
+        <div class="mb-3 p-1">
+            <p class="mb-1 form-label">Date of Birth (YMD):</p>
+            <div class="d-flex flex-row justify-content-center">
+                <input type="number" min="1920" max="2023" placeholder="Year" class="form-control text-center"/>
+                <input type="number" min="1" max="12" placeholder="Month" class="form-control text-center"/>
+                <input type="number" min="1" max="31" placeholder="Day" class="form-control text-center"/>
+            </div>
+        </div>
+
+        <div class="mb-3 p-1">
+            <p class="mb-3 form-label">Vehicles you can drive:</p>
+            <div class="d-flex flex-row justify-content-center justify-content-around">
+                <div>
+                    <input type="checkbox" id="car" value=""/>
+                    <label for="car">Car</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bus" value=""/>
+                    <label for="bus">Bus</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="truck" value="checked"/>
+                    <label for="truck">Truck</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 p-1">
+            <p class="mb-3 form-label">Are you available 24/7:</p>
+            <div class="d-flex flex-row justify-content-center justify-content-around">
+                <div>
+                    <input type="radio" id="confirm" name="availability"/>
+                    <label for="confirm">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="deny" name="availability"/>
+                    <label for="deny">No</label>
+                </div>
+                <div>
+                    <input type="radio" id="neither" name="availability"/>
+                    <label for="neither">Sometimes</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 p-1">
+            <p class="mb-1 form-label">What else do you want to tell us:</p>
+            <textarea class="form-control text-center"></textarea>
+        </div>
+
+        <button class="button btn-primary w-100 p-2 rounded">SIGN UP</button>
+    </form>
+</div>
 </body>
 </html>
